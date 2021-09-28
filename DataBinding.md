@@ -30,15 +30,11 @@ In Angular, event binding can be achieved by specifying the target event name wi
 and the template statement on the right side within quotes (” “). <br>
 
 ## 2) Two-way data binding <br>
-- Two-way data binding, on the other hand, allows synchronization of data in such a way that the views can be updated using the models  <br>
-   and the models can be updated using views. This means that your application will be able to share information between a component class
-   and its template. <br>
-- Angular allows two-way data binding that will allow your application to share data in two directions i.e. from the components to the templates
-  and vice versa.This makes sure that the models and the views present in your application are always synchronized. Two-way data binding will perform
-  two things i.e. setting of the element property and listening to the element change events. <br>
+- Two-way data binding refers to sharing data between a component class and its template. If you change data in one place, it will automatically reflate at the other end. For example, if you change the value of the input box, then it will also update the value of the attached property in a component class.<br>
 
-The syntax of two way binding is – [( )}. As you can see, it is a combination of the property binding syntax i.e. [ ] 
-and the event binding syntax ( ). 
+- The ngModel directive with [()] syntax (also known as banana box syntax) syncs values from the UI to a property and vice-versa. So, whenever the user changes the value on UI, the corresponding property value will get automatically updated.<br>
+
+- [()] = [] + () where [] binds attribute, and () binds an event.
 
 
 
